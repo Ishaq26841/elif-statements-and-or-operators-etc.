@@ -1,0 +1,43 @@
+day = input("What Day It Is?, (Monday To Sunday:) ").strip().capitalize()
+weather = input("What Weather It is? (Sunny/Rainy/Cloudy)").strip().lower()
+homework = input("Is your homework done?(YES/NO)").strip().upper()
+
+
+if day in ("Saturday", "Sunday"):
+    print("Day type:     Weekend- Enjoy your free time and do your homework.")
+
+elif day == "Monday":
+    print("Day Type:     Do Your homework and play outside for a bit.")
+elif day == "Friday":
+    print("Day type:     Enjoy Your free time!")
+elif day == "Tuesday":
+    print("Study and go outside to play and take a rest.")
+else:
+    print("Day Not Recgonized, please check the spelling")
+
+if weather == "Sunny" and homework == "YES":
+    print("After School, Head To the park. its a great weather outside and homework is done.")
+
+if weather == "rainy" and weather == "cloudy":
+    print("It may rain soon. Get an umbrella.")
+
+if not (homework == "YES"):
+    print("Your homework is not done yet. Finish it before you go outside.")
+    
+
+
+if weather == "rainy" and not (homework == "YES"):
+    print("Best plan : Finish Your Homework then watch your favourite show.")
+
+elif weather == "sunny" and homework == "YES" and not (day in ("Saturday", "Sunday")):
+    print("Best Plan : All set up for schools day. you are prepared!")
+
+elif day in ("Saturday","Sunday") and weather == "sunny":
+    print("Best Plan: Great Weekend! do your homeowrk and head outside and have fun!")
+
+else:
+    print("Best Plan: Take one step at a time. you have got this!")
+
+
+
+
